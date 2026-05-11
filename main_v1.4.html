@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0a0e27">
+
+    <title>HackerG Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles_v1.4.css">
+</head>
+<body>
+
+<!-- ========================
+     MATRIX CANVAS
+======================== -->
+<canvas id="matrix"></canvas>
+
+<!-- ========================
+     BACKGROUND
+======================== -->
+<div class="bg-overlay"></div>
+<div class="bg-logo">
+    <img src="logo.png" alt="HackerG Logo">
+</div>
+
+<!-- ========================
+     NAVBAR
+======================== -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <img src="logo.png"       alt="HackerG Logo" class="logo-image">
+            <img src="brand_name.png" alt="HackerG"      class="brand-name">
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- ========================
+     HERO
+======================== -->
+<section id="home" class="hero">
+
+    <div class="hero-left">
+        <h2>👋 Hi, I'm <span>Giri A</span></h2>
+        <h1>Cybersecurity Researcher <br> & Ethical Hacker</h1>
+        <p>
+            Cybersecurity student passionate about ethical hacking, penetration testing,
+            and securing systems, continuously learning and exploring real-world cyber
+            threats and solutions.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://github.com/HackerG4544"              target="_blank" rel="noopener" title="GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/giri-a-0457a4394" target="_blank" rel="noopener" title="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:giriarumugam3121@gmail.com"            title="Send email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+918838980189"                  target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="image-box">
+            <img src="giri_a.jpeg" alt="profile">
+        </div>
+
+        <!-- Floating Icons -->
+        <div class="icon python"><i class="fab fa-python"></i></div>
+        <div class="icon lock"  ><i class="fas fa-shield-alt"></i></div>
+        <div class="icon git"   ><i class="fab fa-github"></i></div>
+        <div class="icon linux" ><i class="fab fa-linux"></i></div>
+        <div class="icon code"  ><i class="fas fa-code"></i></div>
+    </div>
+
+</section>
+
+<!-- ========================
+     ABOUT
+======================== -->
+<section id="about" class="about-section">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-img">
+            <img src="giri_a.jpeg" alt="Profile">
+        </div>
+
+        <div class="about-content">
+            <h3>Cybersecurity Enthusiast</h3>
+            <p>
+                I am a highly motivated cybersecurity enthusiast with a deep passion for
+                ethical hacking, penetration testing, and digital defense. I enjoy analyzing
+                systems, discovering vulnerabilities, and strengthening security against
+                evolving cyber threats. With a strong curiosity for technology, I continuously
+                learn new tools, techniques, and real-world attack methodologies. My goal is
+                to become a skilled security professional who can protect organizations,
+                safeguard sensitive data, and contribute to building a safer and more
+                resilient digital world.
+            </p>
+
+            <div class="about-skills">
+                <span>Kali Linux</span>
+                <span>Networking</span>
+                <span>Python</span>
+                <span>Problem-Solving & Analytical Thinking</span>
+                <span>Penetration Tester</span>
+                <span>Web Security</span>
+                <span>Ethical Hacking</span>
+            </div>
+
+            <a href="resume.pdf" class="about-btn" download>Download Resume</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================
+     SERVICES
+======================== -->
+<section id="services" class="services-section">
+
+    <h2 class="section-title">Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="icon cyan"><i class="fas fa-mobile"></i></div>
+            <h3>Mobile app Pentesting</h3>
+            <p>
+                Mobile app penetration testing is one of my specialties and a personal
+                favorite. I've successfully identified significant vulnerabilities, including
+                a notable bug in Android OS that earned me a $5,000 reward from the Android
+                team in 2020.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon green"><i class="fas fa-shield"></i></div>
+            <h3>Web Security</h3>
+            <p>
+                As a cybersecurity researcher, I specialize in Web VAPT (Vulnerability
+                Assessment and Penetration Testing), focusing on uncovering and addressing
+                vulnerabilities in web applications to protect against cyber threats.
+                Most of my discoveries involve CVEs and server-side bugs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon yellow"><i class="fas fa-code"></i></div>
+            <h3>New website Design</h3>
+            <p>
+                I design and develop modern, responsive, and user-friendly websites tailored
+                to client needs. Focused on performance, security, and clean UI/UX, I build
+                websites that not only look great but also deliver a seamless experience
+                across all devices.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon red"><i class="fas fa-robot"></i></div>
+            <h3>Robotics and IoT</h3>
+            <p>
+                Developing futuristic robots and smart systems with IoT is one of my core
+                skills. I'm not only focused on innovation but also on security, ensuring
+                these systems are built to withstand cyber threats. As both a developer and
+                an IoT penetration tester, I'm dedicated to creating secure IoT products.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon purple"><i class="fas fa-tools"></i></div>
+            <h3>Cyber security tool development</h3>
+            <p>
+                In cybersecurity tool development, I create tools for open-source
+                communities, corporate environments, and clients, aiming to secure
+                applications and support red teaming efforts. Check out my GitHub for
+                open-source projects and explore my contributions to the cybersecurity
+                ecosystem.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================
+     EVENTS / TIMELINE
+======================== -->
+<section id="events" class="timeline-section">
+
+    <h2 class="section-title">Event - Time Line</h2>
+    <h2 class="timeline-sub">My cybersecurity journey and events</h2>
+
+    <div class="timeline">
+
+        <!-- Item 01 -->
+        <div class="timeline-item">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content right">
+                <div class="card-split">
+                    <div class="card-text">
+                        <h3>Rota-TechX Hackathon</h3>
+                        <p>April 12–13, 2025<br>20 Teams participated</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="git.jpg" alt="Event Img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 02 -->
+        <div class="timeline-item">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content right">
+                <div class="card-split">
+                    <div class="card-img">
+                        <img src="git.jpg" alt="Event Img">
+                    </div>
+                    <div class="card-text">
+                        <h3>Rota-TechX Hackathon</h3>
+                        <p>April 12–13, 2025<br>20 Teams participated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 03 -->
+        <div class="timeline-item">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content right">
+                <div class="card-split">
+                    <div class="card-text">
+                        <h3>Rota-TechX Hackathon</h3>
+                        <p>April 12–13, 2025<br>20 Teams participated</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="images/event1.jpg" alt="Event Img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 04 -->
+        <div class="timeline-item">
+            <div class="timeline-number">04</div>
+            <div class="timeline-content right">
+                <div class="card-split">
+                    <div class="card-img">
+                        <img src="images/event4.jpg" alt="Event Img">
+                    </div>
+                    <div class="card-text">
+                        <h3>Rota-TechX Hackathon</h3>
+                        <p>April 12–13, 2025<br>20 Teams participated</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-end">
+            <span class="end-circle">The End</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================
+     PROJECTS
+======================== -->
+<section id="projects" class="projects-section">
+
+    <h2 class="section-title">PROJECTS</h2>
+
+    <div class="projects-wrapper">
+        <div class="projects-track">
+
+            <!-- Original set -->
+            <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener" class="project-card"><img src="images/p1.jpg" alt="Project 1" title="Project 1"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener" class="project-card"><img src="images/p2.jpg" alt="Project 2" title="Project 2"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener" class="project-card"><img src="images/p3.jpg" alt="Project 3" title="Project 3"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project4" target="_blank" rel="noopener" class="project-card"><img src="images/p4.jpg" alt="Project 4" title="Project 4"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project5" target="_blank" rel="noopener" class="project-card"><img src="images/p5.jpg" alt="Project 5" title="Project 5"><h3>Project Title</h3></a>
+
+            <!-- Duplicate set (required for infinite scroll loop) -->
+            <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener" class="project-card"><img src="images/p1.jpg" alt="Project 1" title="Project 1"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener" class="project-card"><img src="images/p2.jpg" alt="Project 2" title="Project 2"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener" class="project-card"><img src="images/p3.jpg" alt="Project 3" title="Project 3"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project4" target="_blank" rel="noopener" class="project-card"><img src="images/p4.jpg" alt="Project 4" title="Project 4"><h3>Project Title</h3></a>
+            <a href="https://github.com/yourusername/project5" target="_blank" rel="noopener" class="project-card"><img src="images/p5.jpg" alt="Project 5" title="Project 5"><h3>Project Title</h3></a>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- ========================
+     CONTACT
+======================== -->
+<section id="contact" class="contact-section">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-card">
+        <form>
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name here.">
+                </div>
+                <div class="input-box">
+                    <label>Mobile no</label>
+                    <input type="text" placeholder="Enter your mobile number here.">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email id here.">
+            </div>
+
+            <div class="input-box">
+                <label>Message</label>
+                <textarea placeholder="Enter your message here."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+    </div>
+
+</section>
+
+<!-- ========================
+     CURSOR GLOW
+======================== -->
+<div class="cursor-glow"></div>
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer class="footer">
+
+    <div class="footer-icons">
+        <a href="https://twitter.com/Giri3121A"                  target="_blank" rel="noopener" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://github.com/HackerG4544"                 target="_blank" rel="noopener" title="Github"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/mr._innocent_3121"    target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/giri-a-0457a4394"   target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@giri3121"              target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/+918838980189"                    target="_blank" rel="noopener" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p>2026 &copy; All rights reserved, developed by <span>HackerG</span></p>
+
+</footer>
+
+<!-- ========================
+     SCRIPT
+======================== -->
+
+<script src="script_v1.4.js"></script>
+
+
+</body>
+</html>
